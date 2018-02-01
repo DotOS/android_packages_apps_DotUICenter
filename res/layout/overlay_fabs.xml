@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/apply_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="6dp"
+        android:clickable="true"
+        android:contentDescription="Light"
+        android:tint="@color/colorPrimary"
+        attrs:elevation="2dp"
+        attrs:fabSize="normal"
+        attrs:srcCompat="@drawable/ic_color_engine" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/auto_mode_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="6dp"
+        android:visibility="gone"
+        attrs:cardBackgroundColor="?attr/colorAccent"
+        attrs:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="19dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="19dp"
+                android:text="Auto-Mode Enabled"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/expand_collpase2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:clickable="true"
+        attrs:elevation="2dp"
+        attrs:fabSize="normal"
+        attrs:srcCompat="@drawable/ic_theme_main" />
+
+</LinearLayout>
