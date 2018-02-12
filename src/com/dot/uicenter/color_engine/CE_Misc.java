@@ -25,23 +25,9 @@ public class CE_Misc extends Fragment {
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final View view = inflater.inflate(R.layout.ui_misc_holder, container, false);
-        getActivity().getFragmentManager().beginTransaction().replace(R.id.accent_changer, new CE_AccentChanger()).commitAllowingStateLoss();
         getActivity().getFragmentManager().beginTransaction().replace(R.id.auto_mode, new CE_AutoMode()).commitAllowingStateLoss();
         getActivity().getFragmentManager().beginTransaction().replace(R.id.tint_mode, new CE_TintMode()).commitAllowingStateLoss();
         return view;
-    }
-
-    public static class CE_AccentChanger extends PreferenceFragment implements Preference.OnPreferenceChangeListener {
-        @Override
-        public void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            addPreferencesFromResource(R.xml.accent_changer);
-
-        }
-        @Override
-        public boolean onPreferenceChange(Preference preference, Object newValue) {
-            return false;
-        }
     }
 
     public static class CE_AutoMode extends PreferenceFragment implements Preference.OnPreferenceChangeListener {

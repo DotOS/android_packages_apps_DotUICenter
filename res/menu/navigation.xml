@@ -2,11 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_color_engine"
+        android:id="@+id/navigation_color_overlay"
         android:icon="@drawable/ic_color_engine"
-        android:title="Color Engine" />
+        android:title="Overlay Engine" />
+    <item
+        android:id="@+id/navigation_color_accent"
+        android:icon="@drawable/ic_color_accent"
+        android:title="Accent Engine" />
     <item
         android:id="@+id/navigation_ui_misc"
         android:icon="@drawable/ic_ui_misc"
         android:title="User Interface Misc" />
+    <item
+        android:id="@+id/navigation_nightmode"
+        android:icon="@drawable/ic_nightmode"
+        android:title="Night Mode" />
 </menu>

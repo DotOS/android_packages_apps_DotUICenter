@@ -57,6 +57,7 @@
         android:layout_alignParentBottom="true"
         android:layout_below="@+id/toolbar_container"
         android:layout_marginTop="4dp"
+        android:animateLayoutChanges="true"
         android:elevation="0dp"
         android:fitsSystemWindows="true"
         android:gravity="bottom"
@@ -86,6 +87,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="12dp"
+                android:animateLayoutChanges="true"
                 android:background="?attr/colorPrimary"
                 android:fitsSystemWindows="true"
                 android:orientation="vertical">
@@ -109,6 +111,7 @@
                     android:id="@+id/fragments_container"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:animateLayoutChanges="true"
                     android:background="?attr/colorPrimary"
                     android:orientation="vertical" />
 
