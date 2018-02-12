@@ -7,13 +7,14 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.dot.uicenter.color_engine.CE_Accent_BaseView;
 import com.dot.uicenter.color_engine.CE_Misc;
 import com.dot.uicenter.color_engine.CE_Overlay_BaseView;
 import com.dot.uicenter.color_engine.OverlayUtils;
+import com.dot.uicenter.night_mode.NightModeFragment;
 import com.dot.uicenter.utils.BottomNavigationViewCustom;
 import com.dot.uicenter.utils.ExpandableLayout;
 import com.dot.uicenter.utils.ObjectToolsAnimator;
@@ -24,13 +25,21 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             FloatingActionButton overlay_fab = findViewById(R.id.apply_overlay);
             switch (item.getItemId()) {
-                case R.id.navigation_color_engine:
+                case R.id.navigation_color_overlay:
                     loadFragment(R.id.fragments_container, new CE_Overlay_BaseView());
                     overlay_fab.setVisibility(View.VISIBLE);
+                    return true;
+                case R.id.navigation_color_accent:
+                    loadFragment(R.id.fragments_container, new CE_Accent_BaseView());
+                    overlay_fab.setVisibility(View.GONE);
                     return true;
                 case R.id.navigation_ui_misc:
                     loadFragment(R.id.fragments_container, new CE_Misc());
                     overlay_fab.setVisibility(View.GONE);
+                    return true;
+                case R.id.navigation_nightmode:
+                    loadFragment(R.id.fragments_container, new NightModeFragment());
+					overlay_fab.setVisibility(View.GONE);
                     return true;
             }
             return false;
@@ -55,13 +64,10 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
 
     public void updateViews() {
         SharedPreferences prefs = getSharedPreferences("auto_mode", MODE_PRIVATE);
-        CardView alert = findViewById(R.id.auto_mode_card);
         FloatingActionButton apply_overlay = findViewById(R.id.apply_overlay);
         if (prefs.getInt("auto_mode", 0) == 0) {
-            alert.setVisibility(View.GONE);
             apply_overlay.setVisibility(View.VISIBLE);
         } else if (prefs.getInt("auto_mode", 0) == 1) {
-            alert.setVisibility(View.VISIBLE);
             apply_overlay.setVisibility(View.GONE);
         }
     }

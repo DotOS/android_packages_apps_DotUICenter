@@ -1,6 +1,7 @@
 package com.dot.uicenter.color_engine;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -15,7 +16,7 @@ import com.dot.uicenter.pageindicator.PageIndicatorView;
 
 public class CE_Overlay_BaseView extends Fragment {
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final View view = inflater.inflate(R.layout.ce_overlay_layout, container, false);
