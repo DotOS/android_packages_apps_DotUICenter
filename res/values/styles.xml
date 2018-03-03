@@ -18,5 +18,14 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+    <style name="AppTheme.Black" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimaryB</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryB</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorPrimaryB</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 
 </resources>
