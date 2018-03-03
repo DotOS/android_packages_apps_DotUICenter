@@ -5,7 +5,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:defaultValue="false"
-        android:iconSpaceReserved="true"
         android:key="auto_overlay"
         android:summary="@string/auto_mode_summary"
         android:title="@string/auto_mode_title" />

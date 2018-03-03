@@ -13,8 +13,5 @@
         android:id="@+id/navigation_ui_misc"
         android:icon="@drawable/ic_ui_misc"
         android:title="User Interface Misc" />
-    <item
-        android:id="@+id/navigation_nightmode"
-        android:icon="@drawable/ic_nightmode"
-        android:title="Night Mode" />
+
 </menu>

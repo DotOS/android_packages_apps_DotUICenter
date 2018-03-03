@@ -16,4 +16,14 @@ public class ObjectToolsAnimator {
         mover.setDuration(500);
         mover.start();
     }
+    public static void rotate(View v, float from, float to) {
+        android.animation.ObjectAnimator mover = android.animation.ObjectAnimator.ofFloat(v, "rotation", from, to);
+        mover.setDuration(500);
+        mover.start();
+    }
+    public static void rotate(View v, float from, float to, long duration) {
+        android.animation.ObjectAnimator mover = android.animation.ObjectAnimator.ofFloat(v, "rotation", from, to);
+        mover.setDuration(duration);
+        mover.start();
+    }
 }

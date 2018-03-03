@@ -24,7 +24,7 @@ public class CE_Overlay_BaseView extends Fragment {
         PagerAdapter mSectionsPagerAdapter = new FragmentPagerAdapter(getChildFragmentManager()) {
             @Override
             public int getCount() {
-                return 2;
+                return 3;
             }
 
             @Override
@@ -33,6 +33,8 @@ public class CE_Overlay_BaseView extends Fragment {
                     case 0:
                         return new CE_Overlay_Showcase_Light();
                     case 1:
+                        return new CE_Overlay_Showcase_Dark();
+                    case 2:
                         return new CE_Overlay_Showcase_Black();
                     default:
                         return null;
@@ -49,6 +51,9 @@ public class CE_Overlay_BaseView extends Fragment {
                         break;
                     case 1:
                         updateFABTheme("Dark");
+                        break;
+                    case 2:
+                        updateFABTheme("Black");
                         break;
                 }
             }

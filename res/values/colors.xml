@@ -5,6 +5,9 @@
     <color name="colorAccent">@color/dot_blue</color>
     <color name="colorPrimaryD">#212121</color>
     <color name="colorPrimaryDDark">#1b1b1b</color>
+	<color name="colorPrimaryB">#000000</color>
+	<color name="menuEditorBackground">#bd404040</color>
+	<color name="menuEditorCardBackground">#bd2d2d2d</color>
     <!-- Custom colours for dot -->
     <color name="dot_blue">#3C85ED</color>
     <color name="dot_green">#2CA851</color>
