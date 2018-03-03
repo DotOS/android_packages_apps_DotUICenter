@@ -208,7 +208,7 @@ public class PageIndicatorView extends View implements ViewPager.OnPageChangeLis
 
     /**
      * Return radius of each circle indicators in px. If custom radius is not set, return
-     * default value {@link Indicator#DEFAULT_RADIUS_DP}.
+     * default_ubuntu value {@link Indicator#DEFAULT_RADIUS_DP}.
      */
     public int getRadius() {
         return manager.indicator().getRadius();
@@ -245,7 +245,7 @@ public class PageIndicatorView extends View implements ViewPager.OnPageChangeLis
 
     /**
      * Return padding in px between each circle indicator. If custom padding is not set,
-     * return default value {@link Indicator#DEFAULT_PADDING_DP}.
+     * return default_ubuntu value {@link Indicator#DEFAULT_PADDING_DP}.
      */
     public int getPadding() {
         return manager.indicator().getPadding();
@@ -343,7 +343,7 @@ public class PageIndicatorView extends View implements ViewPager.OnPageChangeLis
 
     /**
      * Return color of selected circle indicator. If custom unselected color
-     * is not set, return default color {@link ColorAnimation#DEFAULT_SELECTED_COLOR}.
+     * is not set, return default_ubuntu color {@link ColorAnimation#DEFAULT_SELECTED_COLOR}.
      */
     public int getSelectedColor() {
         return manager.indicator().getSelectedColor();
@@ -361,7 +361,7 @@ public class PageIndicatorView extends View implements ViewPager.OnPageChangeLis
 
     /**
      * Return color of unselected state of each circle indicator. If custom unselected color
-     * is not set, return default color {@link ColorAnimation#DEFAULT_UNSELECTED_COLOR}.
+     * is not set, return default_ubuntu color {@link ColorAnimation#DEFAULT_UNSELECTED_COLOR}.
      */
     public int getUnselectedColor() {
         return manager.indicator().getUnselectedColor();
@@ -408,7 +408,7 @@ public class PageIndicatorView extends View implements ViewPager.OnPageChangeLis
 
     /**
      * Return animation duration time in milliseconds. If custom duration is not set,
-     * return default duration time {@link BaseAnimation#DEFAULT_ANIMATION_TIME}.
+     * return default_ubuntu duration time {@link BaseAnimation#DEFAULT_ANIMATION_TIME}.
      */
     public long getAnimationDuration() {
         return manager.indicator().getAnimationDuration();

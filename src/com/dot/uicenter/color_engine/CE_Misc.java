@@ -27,6 +27,7 @@ public class CE_Misc extends Fragment {
         final View view = inflater.inflate(R.layout.ui_misc_holder, container, false);
         getActivity().getFragmentManager().beginTransaction().replace(R.id.auto_mode, new CE_AutoMode()).commitAllowingStateLoss();
         getActivity().getFragmentManager().beginTransaction().replace(R.id.tint_mode, new CE_TintMode()).commitAllowingStateLoss();
+        getActivity().getFragmentManager().beginTransaction().replace(R.id.warn_mode, new CE_WarnMode()).commitAllowingStateLoss();
         return view;
     }
 
@@ -91,6 +92,33 @@ public class CE_Misc extends Fragment {
                     else {
                         OverlayUtils.setTintMode(0);
                         killPackage("com.android.systemui");
+                    }
+                    return true;
+                }
+            });
+        }
+        @Override
+        public boolean onPreferenceChange(Preference preference, Object newValue) {
+            return false;
+        }
+    }
+
+    public static class CE_WarnMode extends PreferenceFragment implements Preference.OnPreferenceChangeListener {
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            addPreferencesFromResource(R.xml.warn_mode);
+            SwitchPreference tint_mode = (SwitchPreference) findPreference("warn_mode_pref");
+            tint_mode.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+                @Override
+                public boolean onPreferenceClick(Preference preference) {
+                    boolean checked = ((SwitchPreference) preference)
+                            .isChecked();
+                    if (checked) {
+                        OverlayUtils.setWarnMode(0);
+                    }
+                    else {
+                        OverlayUtils.setWarnMode(1);
                     }
                     return true;
                 }

@@ -103,7 +103,7 @@ public class BottomNavigationViewCustom extends FrameLayout {
         this(context, attrs, 0);
     }
 
-    @SuppressLint("RestrictedApi")
+    @SuppressLint({"RestrictedApi", "PrivateResource"})
     public BottomNavigationViewCustom(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
