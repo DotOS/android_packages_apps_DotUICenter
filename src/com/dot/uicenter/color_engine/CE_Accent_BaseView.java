@@ -1,7 +1,6 @@
 package com.dot.uicenter.color_engine;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerAdapter;
@@ -32,7 +31,7 @@ import com.dot.uicenter.utils.ExpandableLayout;
 public class CE_Accent_BaseView extends Fragment {
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final View view = inflater.inflate(R.layout.ce_accent_layout, container, false);
@@ -127,34 +126,34 @@ public class CE_Accent_BaseView extends Fragment {
                 String accent = String.valueOf(apply_accent.getContentDescription());
                 switch (accent) {
                     case "Pixel":
-                        OverlayUtils.enableAccentTheme("com.android.dot.pixel");
+                        OverlayUtils.setAccentTheme(1);
                         break;
                     case "Green":
-                        OverlayUtils.enableAccentTheme("com.android.dot.green");
+                        OverlayUtils.setAccentTheme(2);
                         break;
                     case "Yellow":
-                        OverlayUtils.enableAccentTheme("com.android.dot.yellow");
+                        OverlayUtils.setAccentTheme(3);
                         break;
                     case "Red":
-                        OverlayUtils.enableAccentTheme("com.android.dot.red");
+                        OverlayUtils.setAccentTheme(4);
                         break;
                     case "Purple":
-                        OverlayUtils.enableAccentTheme("com.android.dot.purple");
+                        OverlayUtils.setAccentTheme(5);
                         break;
                     case "Grey":
-                        OverlayUtils.enableAccentTheme("com.android.dot.grey");
+                        OverlayUtils.setAccentTheme(6);
                         break;
                     case "Sky":
-                        OverlayUtils.enableAccentTheme("com.android.dot.sky");
+                        OverlayUtils.setAccentTheme(7);
                         break;
                     case "Teal":
-                        OverlayUtils.enableAccentTheme("com.android.dot.stock");
+                        OverlayUtils.setAccentTheme(0);
                         break;
                     case "Violet":
-                        OverlayUtils.enableAccentTheme("com.android.dot.violet");
+                        OverlayUtils.setAccentTheme(8);
                         break;
                     case "Pink":
-                        OverlayUtils.enableAccentTheme("com.android.dot.pink");
+                        OverlayUtils.setAccentTheme(9);
                         break;
                     case "Custom":
                         EditText custom_accent = view.findViewById(R.id.custom_package);
@@ -163,8 +162,8 @@ public class CE_Accent_BaseView extends Fragment {
                         }
                         break;
                     default :
-                        Log.e("dotOS OverlayManager", "Error: No Accent Package set");
-                        Toast.makeText(getContext(), "dotOS Overlay Manager : 'Error: No Accent Package set'", Toast.LENGTH_SHORT).show();
+                        Log.e("OverlayManager", "Error: No Accent Package set");
+                        Toast.makeText(getContext(), "Overlay Manager : 'Error: No Accent Package set'", Toast.LENGTH_SHORT).show();
                         break;
                 }
             }

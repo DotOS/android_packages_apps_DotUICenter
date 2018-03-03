@@ -48,4 +48,10 @@
             <enum name="auto" value="2" />
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="PanelEditor">
+        <attr name="panel_editor_object" format="string" />
+        <attr name="panel_editor_is_text" format="boolean" />
+        <attr name="panel_editor_expand" format="boolean" />
+    </declare-styleable>
 </resources>
