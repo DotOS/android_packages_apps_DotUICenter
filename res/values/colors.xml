@@ -9,7 +9,7 @@
 	<color name="menuEditorBackground">#bd404040</color>
 	<color name="menuEditorCardBackground">#bd2d2d2d</color>
     <!-- Custom colours for dot -->
-    <color name="dot_blue">#3C85ED</color>
+    <color name="dot_blue">#3c85ed</color>
     <color name="dot_green">#2CA851</color>
 	<color name="dot_yellow">#F5B700</color>
 	<color name="dot_red">#E34136</color>
