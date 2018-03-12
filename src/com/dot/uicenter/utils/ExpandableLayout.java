@@ -11,6 +11,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.widget.FrameLayout;
 import android.widget.Scroller;
+
 import com.dot.uicenter.R;
 
 public class ExpandableLayout extends FrameLayout {

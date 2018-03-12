@@ -53,7 +53,7 @@ public class PositionSavedState extends View.BaseSavedState {
         out.writeInt(this.lastSelectedPosition);
     }
 
-    public static final Parcelable.Creator<PositionSavedState> CREATOR = new Parcelable.Creator<PositionSavedState>() {
+    public static final Creator<PositionSavedState> CREATOR = new Creator<PositionSavedState>() {
         public PositionSavedState createFromParcel(Parcel in) {
             return new PositionSavedState(in);
         }
