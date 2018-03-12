@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         app:cardBackgroundColor="?attr/colorPrimary"
         app:cardCornerRadius="1dp"
-        app:cardElevation="2dp">
+        app:cardElevation="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,19 +63,6 @@
                     app:piv_selectedColor="@color/colorAccent"
                     app:piv_unselectedColor="@color/colorPrimaryDark"
                     app:piv_viewPager="@+id/accent_viewpager" />
-
-                <ImageButton
-                    android:id="@+id/apply_preset"
-                    android:layout_width="32dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="9dp"
-                    android:background="?selectableItemBackgroundBorderless"
-                    android:contentDescription="Pixel"
-                    android:scaleType="fitCenter"
-                    android:tint="?attr/colorAccent"
-                    app:srcCompat="@drawable/ic_finish" />
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/card_ca"
@@ -145,73 +132,4 @@
 
     </android.support.v7.widget.CardView>
 
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:animateLayoutChanges="true"
-        app:cardBackgroundColor="?attr/colorPrimary">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:animateLayoutChanges="true"
-            android:orientation="vertical">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="45dp">
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="14dp"
-                    android:elevation="4dp"
-                    android:text="Color Accent Engine Informations"
-                    android:visibility="visible" />
-
-                <ImageButton
-                    android:id="@+id/show_accent_info"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="9dp"
-                    android:background="@android:color/transparent"
-                    android:elevation="0dp"
-                    android:focusableInTouchMode="true"
-                    android:foregroundTint="@color/cardview_shadow_start_color"
-                    android:paddingBottom="7dp"
-                    android:paddingTop="7dp"
-                    android:scaleType="fitEnd"
-                    app:srcCompat="@drawable/ic_expand_more" />
-
-            </RelativeLayout>
-
-            <com.dot.uicenter.utils.ExpandableLayout
-                android:id="@+id/overlay_info_layout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:exl_duration="300">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/accent_info"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="14dp"
-                        android:layout_marginEnd="14dp"
-                        android:layout_marginStart="14dp"
-                        android:text="This Color Accent Engine uses root shell to execute changing accent colors, available only for stock dotOS Accent Packages. Other Accent Packages can be enabled only from 'Custom Accent' section by adding overlay package name." />
-                </LinearLayout>
-
-            </com.dot.uicenter.utils.ExpandableLayout>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
 </LinearLayout>
