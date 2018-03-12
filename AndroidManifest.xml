@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dot.uicenter"
 	android:versionCode="1"
-	android:versionName="2.1-UICenter">
+	android:versionName="3.1-InterfaceCenter">
 	<uses-sdk
         android:minSdkVersion="27"
         android:targetSdkVersion="27" />
@@ -16,7 +16,7 @@
         android:hardwareAccelerated="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.dot.uicenter.BaseActivity"
+            android:name="com.dot.uicenter.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
