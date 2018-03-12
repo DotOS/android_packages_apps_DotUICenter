@@ -1,0 +1,75 @@
+package com.dot.uicenter.utils;
+
+import android.content.Context;
+import android.provider.Settings;
+import android.view.View;
+
+import static com.dot.uicenter.utils.ShellUtils.*;
+
+public class OverlayUtils {
+
+    public static void enableAccentTheme(String pkg) {
+        run("cmd overlay enable --user 0 " + pkg);
+    }
+
+    /*
+    * Accent Theme
+    * 0 - Teal [Default]
+    * 1 - Pixel
+    * 2 - Green
+    * 3 - Yellow
+    * 4 - Red
+    * 5 - Purple
+    * 6 - Grey
+    * 7 - Sky
+    * 8 - Violet
+    * 9 - Pink
+    * */
+    public static void setAccentTheme(Context context, int val) {
+        Settings.Secure.putInt(context.getContentResolver(),
+                Settings.Secure.ACCENT_THEME, val);
+    }
+
+    /*
+    * Main Overlay Theme
+    * 0 - Auto
+    * 1 - Light
+    * 2 - Dark
+    * 3 - Black
+    * */
+    public static void setOverlayTheme(Context context, int val) {
+        Settings.Secure.putInt(context.getContentResolver(),
+                Settings.Secure.SYSTEM_THEME_STYLE, val);
+    }
+
+    /*
+    * QS Tiles Tint Mode
+    * 0 - Default
+    * 1 - Color Accent Track
+    * */
+    public static void setTintMode(Context context, int val) {
+        Settings.Secure.putInt(context.getContentResolver(),
+                Settings.Secure.TINT_MODE, val);
+    }
+
+    /*
+     * Lockscreen Clock Style
+     * 0 - DotClock
+     * 1 - Stock Clock
+     * 2 - Custom 1 [Unavailable]
+     * 3 - Custom 2 [Unavailable]
+     */
+    public static void setClockStyle(Context context, int val) {
+        //run("settings put secure clock_style " + val);
+    }
+
+    /*
+    * Brightness Warn Mode
+    * 0 - Enable
+    * 1 - Disable
+    * */
+    public static void setWarnMode(Context context, int val) {
+        Settings.Secure.putInt(context.getContentResolver(),
+                Settings.Secure.BRIGHTNESS_WARN_MODE, val);
+    }
+}
