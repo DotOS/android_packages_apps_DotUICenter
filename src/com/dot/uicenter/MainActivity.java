@@ -1,6 +1,7 @@
 package com.dot.uicenter;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -25,6 +26,8 @@ import com.dot.uicenter.utils.ObjectToolsAnimator;
 import com.dot.uicenter.utils.OverlayUtils;
 import com.dot.uicenter.utils.SystemProperties;
 import com.dot.uicenter.utils.WrapContentViewPager;
+
+import static java.lang.Thread.sleep;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -122,8 +125,25 @@ public class MainActivity extends AppCompatActivity {
                         }
                         break;
                 }
+              refreshUI();
             }
         });
+    }
+	
+    public void refreshUI() {
+        finish();
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+	try {
+            sleep(1700);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        startActivity(new Intent(this, this.getClass()));
+        overridePendingTransition(android.R.anim.fade_in,
+                android.R.anim.fade_out);
     }
 
     public void loadFragments() {
