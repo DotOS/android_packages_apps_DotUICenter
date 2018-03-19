@@ -121,9 +121,18 @@ public class MainActivity extends AppCompatActivity {
                             OverlayUtils.enableAccentTheme(custom_accent.getText().toString());
                         }
                         break;
+					refreshUI();
                 }
             }
         });
+    }
+	
+	public void refreshUI() {
+        finish();
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
     public void loadFragments() {
