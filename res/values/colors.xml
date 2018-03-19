@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#ffffff</color>
     <color name="colorPrimaryDark">#eaeaea</color>
-    <color name="colorAccent">@color/dot_blue</color>
+    <color name="colorAccent">@*android:color/accent_device_default_light</color>
     <color name="colorPrimaryD">#212121</color>
     <color name="colorPrimaryDDark">#1b1b1b</color>
 	<color name="colorPrimaryB">#000000</color>
