@@ -102,9 +102,6 @@ public class MainActivity extends AppCompatActivity {
                     case "Purple":
                         OverlayUtils.setAccentTheme(MainActivity.this, 5);
                         break;
-                    case "Grey":
-                        OverlayUtils.setAccentTheme(MainActivity.this, 6);
-                        break;
                     case "Sky":
                         OverlayUtils.setAccentTheme(MainActivity.this, 7);
                         break;
