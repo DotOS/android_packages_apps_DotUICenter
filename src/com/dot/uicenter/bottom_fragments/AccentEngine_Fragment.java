@@ -16,7 +16,6 @@ import android.widget.Toast;
 
 import com.dot.uicenter.R;
 import com.dot.uicenter.bottom_fragments.accent_engine.CE_Accent_Green;
-import com.dot.uicenter.bottom_fragments.accent_engine.CE_Accent_Grey;
 import com.dot.uicenter.bottom_fragments.accent_engine.CE_Accent_Pink;
 import com.dot.uicenter.bottom_fragments.accent_engine.CE_Accent_Pixel;
 import com.dot.uicenter.bottom_fragments.accent_engine.CE_Accent_Purple;
@@ -42,7 +41,7 @@ public class AccentEngine_Fragment extends Fragment {
             @Override
             public int getCount()
             {
-                return 10;
+                return 9;
             }
 
             @Override
@@ -59,14 +58,12 @@ public class AccentEngine_Fragment extends Fragment {
                     case 4:
                         return new CE_Accent_Purple();
                     case 5:
-                        return new CE_Accent_Grey();
-                    case 6:
                         return new CE_Accent_Sky();
-                    case 7:
+                    case 6:
                         return new CE_Accent_Teal();
-                    case 8:
+                    case 7:
                         return new CE_Accent_Violet();
-                    case 9:
+                    case 8:
                         return new CE_Accent_Pink();
                     default:
                         return null;
@@ -94,18 +91,15 @@ public class AccentEngine_Fragment extends Fragment {
                         updateAccentButton("Purple");
                         break;
                     case 5:
-                        updateAccentButton("Grey");
-                        break;
-                    case 6:
                         updateAccentButton("Sky");
                         break;
-                    case 7:
+                    case 6:
                         updateAccentButton("Teal");
                         break;
-                    case 8:
+                    case 7:
                         updateAccentButton("Violet");
                         break;
-                    case 9:
+                    case 8:
                         updateAccentButton("Pink");
                         break;
                 }
