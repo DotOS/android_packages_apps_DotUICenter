@@ -9,13 +9,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
-import com.dot.uicenter.MainActivity;
 import com.dot.uicenter.R;
 import com.dot.uicenter.utils.OverlayUtils;
 
 import static android.content.Context.MODE_PRIVATE;
 import static com.dot.uicenter.utils.ShellUtils.killPackage;
+import static java.lang.Thread.sleep;
 
 public class InterfaceMisc_Fragment extends Fragment {
 
@@ -28,7 +29,7 @@ public class InterfaceMisc_Fragment extends Fragment {
         super.onCreate(savedInstanceState);
         final View view = inflater.inflate(R.layout.ui_misc_holder, container, false);
         getActivity().getFragmentManager().beginTransaction().replace(R.id.auto_mode, new CE_AutoMode()).commitAllowingStateLoss();
-        getActivity().getFragmentManager().beginTransaction().replace(R.id.tint_mode, new CE_TintMode()).commitAllowingStateLoss();
+       // getActivity().getFragmentManager().beginTransaction().replace(R.id.tint_mode, new CE_TintMode()).commitAllowingStateLoss();
         getActivity().getFragmentManager().beginTransaction().replace(R.id.warn_mode, new CE_WarnMode()).commitAllowingStateLoss();
         return view;
     }
@@ -90,6 +91,12 @@ public class InterfaceMisc_Fragment extends Fragment {
                     if (checked) {
                         OverlayUtils.setTintMode(getContext(), 1);
                         killPackage("com.android.systemui");
+						try {
+                            sleep(1300);
+                            Toast.makeText(getContext(), "This feature, for now, is deprecated", Toast.LENGTH_LONG).show();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     }
                     else {
                         OverlayUtils.setTintMode(getContext(), 0);
