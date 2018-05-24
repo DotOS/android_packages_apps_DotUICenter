@@ -5,6 +5,6 @@
         android:checked="true"
         android:defaultValue="true"
         android:key="warn_mode_pref"
-        android:summary="Enable Brightness Orange Warn Color in Brightness Slider"
-        android:title="Enable Brightness Warn" />
+        android:summary="@string/brightness_warn_summary"
+        android:title="@string/brightness_title" />
 </PreferenceScreen>
