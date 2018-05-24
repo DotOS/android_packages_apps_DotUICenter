@@ -15,4 +15,12 @@
     <string name="qs_overlay_light">Quick Settings Overlay [Light]</string>
     <string name="qs_overlay_dark">Quick Settings Overlay [Dark]</string>
     <string name="qs_overlay_black">Quick Settings Overlay [Black]</string>
+
+    <string name="overlay_engine_title">Overlay Engine</string>
+    <string name="accent_engine_title">Accent Engine</string>
+    <string name="interface_misc_title">Interface Misc</string>
+
+    <string name="accents">Accents</string>
+    <string name="custom_accent">Custom Accent</string>
+    <string name="package_name">Package Name</string>
 </resources>
