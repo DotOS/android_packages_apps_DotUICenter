@@ -26,8 +26,8 @@ public class OverlayUtils {
     * 9 - Pink
     * */
     public static void setAccentTheme(Context context, int val) {
-        Settings.Secure.putInt(context.getContentResolver(),
-                Settings.Secure.ACCENT_THEME, val);
+        //Settings.Secure.putInt(context.getContentResolver(),
+        //        Settings.Secure.ACCENT_THEME, val);
     }
 
     /*
@@ -38,8 +38,9 @@ public class OverlayUtils {
     * 3 - Black
     * */
     public static void setOverlayTheme(Context context, int val) {
-        Settings.System.putInt(context.getContentResolver(),
-                Settings.System.SYSTEM_THEME_STYLE, val);
+        run("settings put secure device_theme " + val);
+        //Settings.System.putInt(context.getContentResolver(),
+        //        Settings.System.SYSTEM_THEME_STYLE, val);
     }
 
     /*
@@ -48,8 +49,8 @@ public class OverlayUtils {
     * 1 - Color Accent Track
     * */
     public static void setTintMode(Context context, int val) {
-        Settings.Secure.putInt(context.getContentResolver(),
-                Settings.Secure.TINT_MODE, val);
+        //Settings.Secure.putInt(context.getContentResolver(),
+        //        Settings.Secure.TINT_MODE, val);
     }
 
     /*
@@ -69,7 +70,7 @@ public class OverlayUtils {
     * 1 - Disable
     * */
     public static void setWarnMode(Context context, int val) {
-        Settings.Secure.putInt(context.getContentResolver(),
-                Settings.Secure.BRIGHTNESS_WARN_MODE, val);
+        //Settings.Secure.putInt(context.getContentResolver(),
+        //        Settings.Secure.BRIGHTNESS_WARN_MODE, val);
     }
 }

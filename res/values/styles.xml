@@ -3,23 +3,9 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:navigationBarColor">@color/colorPrimary</item>
-        <item name="android:windowLightNavigationBar">true</item>
         <item name="android:colorBackground">@color/colorPrimary</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowTranslucentStatus">true</item>
-    </style>
-    <style name="AppTheme.Dark" parent="AppTheme.Base">
-        <item name="colorPrimary">@color/colorPrimaryD</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:colorBackground">@color/colorPrimaryD</item>
-    </style>
-    <style name="AppTheme.Black" parent="AppTheme.Base">
-        <item name="colorPrimary">@color/colorPrimaryB</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryB</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:colorBackground">@color/colorPrimaryB</item>
     </style>
 </resources>

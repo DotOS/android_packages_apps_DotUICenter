@@ -26,7 +26,7 @@
                 android:layout_marginBottom="4dp"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="14dp"
-                android:text="@string/accents" />
+                android:text="@string/accent_changer" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -47,22 +47,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="4dp">
-
-                <com.dot.uicenter.pageindicator.PageIndicatorView
-                    android:id="@+id/page_indicator_accent"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginTop="8dp"
-                    app:piv_animationType="worm"
-                    app:piv_autoVisibility="true"
-                    app:piv_count="2"
-                    app:piv_interactiveAnimation="true"
-                    app:piv_scaleFactor="12"
-                    app:piv_selectedColor="@color/colorAccent"
-                    app:piv_unselectedColor="@color/colorPrimaryDark"
-                    app:piv_viewPager="@+id/accent_viewpager" />
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/card_ca"
