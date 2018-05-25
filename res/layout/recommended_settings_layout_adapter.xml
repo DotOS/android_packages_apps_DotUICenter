@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rmd_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="6dp"
+    android:background="@drawable/outline_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/rmd_icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:tint="?android:attr/textColorPrimary"
+            app:srcCompat="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/rmd_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rmd_icon"
+            android:layout_marginEnd="32dp"
+            android:layout_toEndOf="@+id/rmd_icon"
+            android:fontFamily="@font/google_sans_bold"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rmd_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rmd_icon"
+            android:layout_below="@+id/rmd_title"
+            android:layout_marginEnd="32dp"
+            android:layout_toEndOf="@+id/rmd_icon"
+            android:fontFamily="@font/google_sans"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
