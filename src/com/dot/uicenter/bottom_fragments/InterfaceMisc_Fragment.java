@@ -29,7 +29,7 @@ public class InterfaceMisc_Fragment extends Fragment {
         super.onCreate(savedInstanceState);
         final View view = inflater.inflate(R.layout.ui_misc_holder, container, false);
         getActivity().getFragmentManager().beginTransaction().replace(R.id.auto_mode, new CE_AutoMode()).commitAllowingStateLoss();
-        getActivity().getFragmentManager().beginTransaction().replace(R.id.tint_mode, new CE_TintMode()).commitAllowingStateLoss();
+       // getActivity().getFragmentManager().beginTransaction().replace(R.id.tint_mode, new CE_TintMode()).commitAllowingStateLoss();
         getActivity().getFragmentManager().beginTransaction().replace(R.id.warn_mode, new CE_WarnMode()).commitAllowingStateLoss();
         return view;
     }
