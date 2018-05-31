@@ -1,15 +1,12 @@
 package com.dot.uicenter.utils;
 
-import android.content.Context;
 import android.provider.Settings;
-import android.view.View;
-
-import static com.dot.uicenter.utils.ShellUtils.*;
+import android.content.Context;
 
 public class OverlayUtils {
 
     public static void enableAccentTheme(String pkg) {
-        run("cmd overlay enable --user 0 " + pkg);
+        //run("cmd overlay enable --user 0 " + pkg);
     }
 
     /*
@@ -52,16 +49,6 @@ public class OverlayUtils {
                 Settings.Secure.TINT_MODE, val);
     }
 
-    /*
-     * Lockscreen Clock Style
-     * 0 - DotClock
-     * 1 - Stock Clock
-     * 2 - Custom 1 [Unavailable]
-     * 3 - Custom 2 [Unavailable]
-     */
-    public static void setClockStyle(Context context, int val) {
-        //run("settings put secure clock_style " + val);
-    }
 
     /*
     * Brightness Warn Mode

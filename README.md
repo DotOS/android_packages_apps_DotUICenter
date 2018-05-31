@@ -1,12 +1,9 @@
 # dotOS Interface Center
 
-## Credits :
-Roman Danylyk for his library [PageIndicatorView](https://github.com/romandanylyk/PageIndicatorView)
 
 
 ### **License**
 
-    Copyright 2017 Roman Danylyk
     Copyright 2018 dotOS
     
     Licensed under the Apache License, Version 2.0 (the "License");

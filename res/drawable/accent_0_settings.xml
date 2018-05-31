@@ -22,7 +22,7 @@
         android:fillColor="#dbdbdb" />
     <path
         android:pathData="M120.26 55.610001l200.26 0c4.69792 0 8.48 3.782079 8.48 8.479999l0 10.18c0 4.69792 -3.78208 8.48 -8.48 8.48l-200.26 0c-4.69792 0 -8.48 -3.78208 -8.48 -8.48l0 -10.18c0 -4.69792 3.78208 -8.479999 8.48 -8.479999z"
-        android:fillColor="@color/dot_blue" />
+        android:fillColor="?attr/colorAccent" />
     <path
         android:pathData="M125.59 280.35001l237.13 0c4.32674 0 7.81 3.48326 7.81 7.81l0 11.52c0 4.32674 -3.48326 7.81 -7.81 7.81l-237.13 0c-4.32674 0 -7.81 -3.48326 -7.81 -7.81l0 -11.52c0 -4.32674 3.48326 -7.81 7.81 -7.81z"
         android:fillColor="#939393" />
@@ -52,20 +52,20 @@
         android:fillColor="#1b1b1b" />
     <path
         android:pathData="M63.94 74.25l-1.78 0 -0.63 -0.61A14.54 14.54 0 1 0 60 75.22l0.61 0.63 0 1.78 11.21 11.22 3.35 -3.35zm-13.5 0A10.13 10.13 0 1 1 60.57 64.13 10.11 10.11 0 0 1 50.44 74.25Z"
-        android:fillColor="@color/dot_blue" />
+        android:fillColor="?attr/colorAccent" />
     <path
         android:pathData="M75.169998 180.05a24.73 24.73 0 0 1 -24.729999 24.73 24.73 24.73 0 0 1 -24.73 -24.73 24.73 24.73 0 0 1 24.73 -24.73 24.73 24.73 0 0 1 24.729999 24.73z"
-        android:fillColor="@color/dot_blue" />
+        android:fillColor="?attr/colorAccent" />
     <path
         android:pathData="M75.169998 307.48999a24.73 24.73 0 0 1 -24.729999 24.73 24.73 24.73 0 0 1 -24.73 -24.73 24.73 24.73 0 0 1 24.73 -24.73 24.73 24.73 0 0 1 24.729999 24.73z"
-        android:fillColor="@color/dot_blue" />
+        android:fillColor="?attr/colorAccent" />
     <path
         android:pathData="M80.220001 438.56a24.73 24.73 0 0 1 -24.729999 24.73 24.73 24.73 0 0 1 -24.73 -24.73 24.73 24.73 0 0 1 24.73 -24.73 24.73 24.73 0 0 1 24.729999 24.73z"
-        android:fillColor="@color/dot_blue" />
+        android:fillColor="?attr/colorAccent" />
     <path
         android:pathData="M80.220001 569.63a24.73 24.73 0 0 1 -24.729999 24.73 24.73 24.73 0 0 1 -24.73 -24.73 24.73 24.73 0 0 1 24.73 -24.72999 24.73 24.73 0 0 1 24.729999 24.72999z"
-        android:fillColor="@color/dot_blue" />
+        android:fillColor="?attr/colorAccent" />
     <path
         android:pathData="M85.299999 700.70001a24.73 24.73 0 0 1 -24.729999 24.73 24.73 24.73 0 0 1 -24.73 -24.73 24.73 24.73 0 0 1 24.73 -24.73 24.73 24.73 0 0 1 24.729999 24.73z"
-        android:fillColor="@color/dot_blue" />
+        android:fillColor="?attr/colorAccent" />
 </vector>
