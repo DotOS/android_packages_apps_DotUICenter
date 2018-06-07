@@ -7,5 +7,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowTranslucentStatus">true</item>
+ 	<item name="android:navigationBarColor">@*android:color/accent_device_default_light</item>
+ 	<item name="android:windowLightNavigationBar">False</item>
     </style>
 </resources>
