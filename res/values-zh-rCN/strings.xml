@@ -3,7 +3,7 @@
 <resources>
   <string name="app_name">DotUI 中心</string>
   <string name="title_welcome">欢迎来到 DotUI 中心</string>
-  <string name="subtitle_welcome">Expand Below View to use available options</string>
+  <string name="subtitle_welcome">展开以下视图以使用可用选项</string>
   <string name="change_accent_title">更改主题强调色</string>
   <string name="change_accent_example_summary">Pixel</string>
   <string name="auto_mode_title">从壁纸中选取叠加层</string>
@@ -21,9 +21,9 @@
   <string name="rs_title2">成为A屏黑的粉丝吧！</string>
   <string name="rs_summary0">只是一点点暗不会损坏任何东西，不是吗？</string>
   <string name="rs_summary1">来玩强调色吧</string>
-  <string name="rs_summary2">Highly recommended for amoled display users, it can save the battery.</string>
+  <string name="rs_summary2">极力推荐A屏的用户使用这个，它可以节省电量。</string>
   <string name="main_title">欢迎来到交互界面中心</string>
-  <string name="rs">Recommanded Settings</string>
+  <string name="rs">推荐设置</string>
   <string name="accent_changer">更改强调色</string>
   <string name="package_name">文件包名称</string>
   <string name="custom_accent">自定义强调色</string>
