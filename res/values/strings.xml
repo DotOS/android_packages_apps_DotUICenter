@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">DotUI Center</string>
+	<string name="ui_center_summary_title">Interface Tweaks</string>
     <string name="title_welcome">Welcome to the DotUI Center</string>
     <string name="subtitle_welcome">Expand Below View to use available options</string>
     <string name="change_accent_title">Change Accent Theme</string>
