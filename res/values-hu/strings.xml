@@ -3,7 +3,7 @@
 <resources>
   <string name="app_name">A Dot felhasználói felület központja</string>
   <string name="title_welcome">Üdvözöljük a DotOS felhasználói felület központjában</string>
-  <string name="subtitle_welcome">Expand Below View to use available options</string>
+  <string name="subtitle_welcome">Terjessze ki az alábbi nézetet a rendelkezésre álló lehetőségek használatához</string>
   <string name="change_accent_title">Kiemelt téma megváltoztatása</string>
   <string name="change_accent_example_summary">Pixel</string>
   <string name="auto_mode_title">Fedőréteg kibontása a Háttérképből</string>
@@ -21,9 +21,9 @@
   <string name="rs_title2">Váljon AmoLED-fekete rajongóvá!</string>
   <string name="rs_summary0">Egy kis sötétség még nem rombol le semmit, igaz?</string>
   <string name="rs_summary1">Játszadozás a színkiemelésekkel.</string>
-  <string name="rs_summary2">Highly recommended for amoled display users, it can save the battery.</string>
+  <string name="rs_summary2">Erősen ajánlott AmoLED kijelzőt használóknak, csökkentheti az akkumulátorfogyasztást.</string>
   <string name="main_title">Üdvözöljük a DotOS felhasználói felület központjában</string>
-  <string name="rs">Recommanded Settings</string>
+  <string name="rs">Ajánlott beállítások</string>
   <string name="accent_changer">Kiemelésváltó</string>
   <string name="package_name">Csomagnév</string>
   <string name="custom_accent">Egyéni kiemelés</string>

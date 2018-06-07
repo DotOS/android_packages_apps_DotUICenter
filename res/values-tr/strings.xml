@@ -3,7 +3,7 @@
 <resources>
   <string name="app_name">Arayüz</string>
   <string name="title_welcome">Dotos arayüz merkezine hoş geldiniz</string>
-  <string name="subtitle_welcome">Expand Below View to use available options</string>
+  <string name="subtitle_welcome">Kullanılabilir seçeneklere erişmek için görünümün altını genişletin</string>
   <string name="change_accent_title">Vurgu temasını değiştir</string>
   <string name="change_accent_example_summary">Pixel</string>
   <string name="auto_mode_title">Duvar kağıdından tema ayıkla</string>
@@ -21,9 +21,9 @@
   <string name="rs_title2">Eğlenceli bir siyah fan olun!</string>
   <string name="rs_summary0">Sadece biraz karanlık hiçbir şeyi kırmaz, değil mi?</string>
   <string name="rs_summary1">Renk desenli oyna.</string>
-  <string name="rs_summary2">Highly recommended for amoled display users, it can save the battery.</string>
+  <string name="rs_summary2">Amoled ekran kullanıcıları için tavsiye edilir, pil tasarrufu yapabilirsiniz.</string>
   <string name="main_title">Temalar merkezine hoş geldiniz</string>
-  <string name="rs">Recommanded Settings</string>
+  <string name="rs">Önerilen ayarlar</string>
   <string name="accent_changer">Vurgu rengi değiştirici</string>
   <string name="package_name">Paket adı</string>
   <string name="custom_accent">Özel vurgu rengi</string>
