@@ -1,14 +1,13 @@
 <resources>
     <string name="app_name">DotUI Center</string>
-	<string name="ui_center_summary_title">Interface Tweaks</string>
     <string name="title_welcome">Welcome to the DotUI Center</string>
     <string name="subtitle_welcome">Expand Below View to use available options</string>
     <string name="change_accent_title">Change Accent Theme</string>
     <string name="change_accent_example_summary">Pixel</string>
     <string name="auto_mode_title">Extract Overlay from Wallpaper</string>
     <string name="auto_mode_summary">Select Overlay from wallpaper accent</string>
-    <string name="qs_tint_tacker_title">Track QS Tiles color Accent</string>
-    <string name="qs_tint_tracker_summary">Make QS Tiles to track colorAccent of System if is active and to track normal color when it\'s disabled</string>
+    <string name="qs_circle_title">Enable Android P Circle Tiles</string>
+    <string name="qs_circle_summary">Add a circle behind every tiles which is colored from accent color when tiles are enabled, and gray when they're disabled</string>
     <string name="settings_overlay_light">Settings Overlay [Light]</string>
     <string name="settings_overlay_dark">Settings Overlay [Dark]</string>
     <string name="settings_overlay_black">Settings Overlay [Black]</string>
