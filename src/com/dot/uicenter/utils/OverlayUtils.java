@@ -40,13 +40,13 @@ public class OverlayUtils {
     }
 
     /*
-    * QS Tiles Tint Mode
-    * 0 - Default
-    * 1 - Color Accent Track
+    * QS Tiles Circle Mode
+    * 0 - Android O Default
+    * 1 - Android P Circles enabled
     * */
-    public static void setTintMode(Context context, int val) {
+    public static void setCircleMode(Context context, int val) {
         Settings.Secure.putInt(context.getContentResolver(),
-                Settings.Secure.TINT_MODE, val);
+                Settings.Secure.CIRCLE_MODE, val);
     }
 
 

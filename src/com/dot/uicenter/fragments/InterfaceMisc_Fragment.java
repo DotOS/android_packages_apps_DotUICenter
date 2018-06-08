@@ -81,25 +81,19 @@ public class InterfaceMisc_Fragment extends Fragment {
         @Override
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            addPreferencesFromResource(R.xml.tint_mode);
-            SwitchPreference tint_mode = (SwitchPreference) findPreference("tint_mode");
-            tint_mode.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            addPreferencesFromResource(R.xml.circle_mode);
+            SwitchPreference circle_mode = (SwitchPreference) findPreference("circle_mode");
+            circle_mode.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
                     boolean checked = ((SwitchPreference) preference)
                             .isChecked();
                     if (checked) {
-                        OverlayUtils.setTintMode(getContext(), 1);
+                        OverlayUtils.setCircleMode(getContext(), 1);
                         killPackage("com.android.systemui");
-                        try {
-                            sleep(1300);
-                            Toast.makeText(getContext(), "This feature, for now, is deprecated", Toast.LENGTH_LONG).show();
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
                     }
                     else {
-                        OverlayUtils.setTintMode(getContext(), 0);
+                        OverlayUtils.setCircleMode(getContext(), 0);
                         killPackage("com.android.systemui");
                     }
                     return true;
