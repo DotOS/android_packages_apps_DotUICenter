@@ -31,13 +31,13 @@ public class ExpandableLayout extends FrameLayout {
     private Runnable movingRunnable = new Runnable() {
         @Override
         public void run() {
-            if(scroller.computeScrollOffset()) {
+            if (scroller.computeScrollOffset()) {
                 getLayoutParams().height = scroller.getCurrY();
                 requestLayout();
                 post(this);
                 return;
             }
-            if(scroller.getCurrY() == getTotalCollapseHeight()) {
+            if (scroller.getCurrY() == getTotalCollapseHeight()) {
                 status = Status.COLLAPSED;
                 notifyCollapseEvent();
             } else {
@@ -70,7 +70,7 @@ public class ExpandableLayout extends FrameLayout {
 
     private void init(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         refreshScroller();
-        if(attrs == null) {
+        if (attrs == null) {
             return;
         }
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ExpandableLayout, defStyleAttr, defStyleRes);
@@ -85,13 +85,13 @@ public class ExpandableLayout extends FrameLayout {
 
     @Override
     protected void onMeasure(final int widthMeasureSpec, final int heightMeasureSpec) {
-        if(!isMoving()) {
+        if (!isMoving()) {
             setExpandedMeasuredHeight(getMaxChildHeight(widthMeasureSpec));
         }
 
-        if(isExpanded()) {
+        if (isExpanded()) {
             setMeasuredDimension(widthMeasureSpec, getExpandedMeasuredHeight());
-        } else if(isCollapsed()) {
+        } else if (isCollapsed()) {
             setMeasuredDimension(widthMeasureSpec, getTotalCollapseHeight());
         } else {
             setMeasuredDimension(widthMeasureSpec, heightMeasureSpec);
@@ -100,7 +100,7 @@ public class ExpandableLayout extends FrameLayout {
 
     private int getMaxChildHeight(int widthMeasureSpec) {
         int max = 0;
-        for(int i = 0; i < getChildCount(); i++) {
+        for (int i = 0; i < getChildCount(); i++) {
             final View child = getChildAt(i);
             measureChild(child, widthMeasureSpec, MeasureSpec.UNSPECIFIED);
             max = Math.max(max, child.getMeasuredHeight());
@@ -109,21 +109,21 @@ public class ExpandableLayout extends FrameLayout {
     }
 
     private int getTotalCollapseHeight() {
-        if(collapseHeight > 0) {
+        if (collapseHeight > 0) {
             return collapseHeight + collapsePadding;
         }
         View view = findViewById(collapseTargetId);
-        if(view == null) {
+        if (view == null) {
             return 0;
         }
         return (getRelativeTop(view) - getTop()) + collapsePadding;
     }
 
     private int getRelativeTop(View target) {
-        if(target == null) {
+        if (target == null) {
             return 0;
         }
-        if(target.getParent().equals(this)) {
+        if (target.getParent().equals(this)) {
             return target.getTop();
         }
         return target.getTop() + getRelativeTop((View) target.getParent());
@@ -134,7 +134,7 @@ public class ExpandableLayout extends FrameLayout {
     }
 
     private void setExpandedMeasuredHeight(int measuredHeight) {
-        if(isPortrait()) {
+        if (isPortrait()) {
             portraitMeasuredHeight = measuredHeight;
         } else {
             landscapeMeasuredHeight = measuredHeight;
@@ -150,13 +150,13 @@ public class ExpandableLayout extends FrameLayout {
     }
 
     private void notifyExpandEvent() {
-        if(expandListener != null) {
+        if (expandListener != null) {
             expandListener.onExpanded(this);
         }
     }
 
     private void notifyCollapseEvent() {
-        if(expandListener != null) {
+        if (expandListener != null) {
             expandListener.onCollapsed(this);
         }
     }
@@ -171,14 +171,14 @@ public class ExpandableLayout extends FrameLayout {
     }
 
     public void expand(boolean smoothScroll) {
-        if(isExpanded() || isMoving()) {
+        if (isExpanded() || isMoving()) {
             return;
         }
         status = Status.MOVING;
         int duration = smoothScroll ? getAnimateDuration() : 0;
         int collapseHeight = getTotalCollapseHeight();
         scroller.startScroll(0, collapseHeight, 0, getExpandedMeasuredHeight() - collapseHeight, duration);
-        if(smoothScroll) {
+        if (smoothScroll) {
             post(movingRunnable);
         } else {
             movingRunnable.run();
@@ -202,14 +202,14 @@ public class ExpandableLayout extends FrameLayout {
     }
 
     public void collapse(boolean smoothScroll) {
-        if(isCollapsed() || isMoving()) {
+        if (isCollapsed() || isMoving()) {
             return;
         }
         status = Status.MOVING;
         int duration = smoothScroll ? getAnimateDuration() : 0;
         int expandedMeasuredHeight = getExpandedMeasuredHeight();
         scroller.startScroll(0, expandedMeasuredHeight, 0, -(expandedMeasuredHeight - getTotalCollapseHeight()), duration);
-        if(smoothScroll) {
+        if (smoothScroll) {
             post(movingRunnable);
         } else {
             movingRunnable.run();

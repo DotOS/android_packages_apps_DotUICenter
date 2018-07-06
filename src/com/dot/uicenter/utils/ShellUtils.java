@@ -10,9 +10,10 @@ import eu.chainfire.libsuperuser.Shell;
 
 public class ShellUtils {
 
-    public static void run(String command){
+    public static void run(String command) {
         Shell.SU.run(command);
     }
+
     public static String Executer(String command) {
 
         StringBuffer output = new StringBuffer();
@@ -24,7 +25,7 @@ public class ShellUtils {
             BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
 
             String line = "";
-            while ((line = reader.readLine())!= null) {
+            while ((line = reader.readLine()) != null) {
                 output.append(line + "n");
             }
 
@@ -35,6 +36,7 @@ public class ShellUtils {
         return response;
 
     }
+
     public static void killPackage(String packageToKill) {
         Process su = null;
         try {
@@ -42,7 +44,7 @@ public class ShellUtils {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        if (su != null ){
+        if (su != null) {
             try {
                 DataOutputStream os = new DataOutputStream(su.getOutputStream());
                 os.writeBytes("killall " + packageToKill + "\n");

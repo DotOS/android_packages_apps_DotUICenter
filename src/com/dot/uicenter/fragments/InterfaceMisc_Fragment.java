@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.dot.uicenter.R;
-import com.dot.uicenter.utils.OverlayUtils;
+import com.dot.uicenter.utils.SettingsUtils;
 
 import static android.content.Context.MODE_PRIVATE;
 import static com.dot.uicenter.utils.ShellUtils.killPackage;
@@ -29,8 +29,6 @@ public class InterfaceMisc_Fragment extends Fragment {
         super.onCreate(savedInstanceState);
         final View view = inflater.inflate(R.layout.ui_misc_holder, container, false);
         getActivity().getFragmentManager().beginTransaction().replace(R.id.auto_mode, new CE_AutoMode()).commitAllowingStateLoss();
-        getActivity().getFragmentManager().beginTransaction().replace(R.id.tint_mode, new CE_TintMode()).commitAllowingStateLoss();
-        getActivity().getFragmentManager().beginTransaction().replace(R.id.warn_mode, new CE_WarnMode()).commitAllowingStateLoss();
         return view;
     }
 
@@ -38,7 +36,7 @@ public class InterfaceMisc_Fragment extends Fragment {
         @Override
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            addPreferencesFromResource(R.xml.auto_mode);
+            addPreferencesFromResource(R.xml.misc_settings);
             SwitchPreference auto_mode = (SwitchPreference) findPreference("auto_overlay");
             auto_mode.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                 @Override
@@ -46,12 +44,12 @@ public class InterfaceMisc_Fragment extends Fragment {
                     boolean checked = ((SwitchPreference) preference)
                             .isChecked();
                     if (checked) {
-                        OverlayUtils.setOverlayTheme(getContext(), 0);
+                        SettingsUtils.setOverlayTheme(getContext(), 0);
                         updateMode(1);
                     }
                     else {
                         updateMode(0);
-                        OverlayUtils.setOverlayTheme(getContext(), 1);
+                        SettingsUtils.setOverlayTheme(getContext(), 1);
                     }
                     return true;
                 }
@@ -70,68 +68,6 @@ public class InterfaceMisc_Fragment extends Fragment {
             SharedPreferences.Editor editor = prefs.edit();
             editor.putInt("auto_mode", value);
             editor.commit();
-        }
-        @Override
-        public boolean onPreferenceChange(Preference preference, Object newValue) {
-            return false;
-        }
-    }
-
-    public static class CE_TintMode extends PreferenceFragment implements Preference.OnPreferenceChangeListener {
-        @Override
-        public void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            addPreferencesFromResource(R.xml.tint_mode);
-            SwitchPreference tint_mode = (SwitchPreference) findPreference("tint_mode");
-            tint_mode.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-                @Override
-                public boolean onPreferenceClick(Preference preference) {
-                    boolean checked = ((SwitchPreference) preference)
-                            .isChecked();
-                    if (checked) {
-                        OverlayUtils.setTintMode(getContext(), 1);
-                        killPackage("com.android.systemui");
-                        try {
-                            sleep(1300);
-                            Toast.makeText(getContext(), "This feature, for now, is deprecated", Toast.LENGTH_LONG).show();
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                    else {
-                        OverlayUtils.setTintMode(getContext(), 0);
-                        killPackage("com.android.systemui");
-                    }
-                    return true;
-                }
-            });
-        }
-        @Override
-        public boolean onPreferenceChange(Preference preference, Object newValue) {
-            return false;
-        }
-    }
-
-    public static class CE_WarnMode extends PreferenceFragment implements Preference.OnPreferenceChangeListener {
-        @Override
-        public void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            addPreferencesFromResource(R.xml.warn_mode);
-            SwitchPreference tint_mode = (SwitchPreference) findPreference("warn_mode_pref");
-            tint_mode.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-                @Override
-                public boolean onPreferenceClick(Preference preference) {
-                    boolean checked = ((SwitchPreference) preference)
-                            .isChecked();
-                    if (checked) {
-                        OverlayUtils.setWarnMode(getContext(), 0);
-                    }
-                    else {
-                        OverlayUtils.setWarnMode(getContext(), 1);
-                    }
-                    return true;
-                }
-            });
         }
         @Override
         public boolean onPreferenceChange(Preference preference, Object newValue) {

@@ -1,12 +1,11 @@
 package com.dot.uicenter.activities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.widget.ImageButton;
 
 import com.dot.uicenter.R;
@@ -15,10 +14,9 @@ import com.dot.uicenter.adapters.RecommendedSettings_Adapter;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.lang.Thread.sleep;
-
 public class MainActivity extends AppCompatActivity {
     Intent intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,19 +52,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void fabController() {
         CardView fc = findViewById(R.id.fc_layout);
-        fc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, InterfaceController.class));
-            }
-        });
+        fc.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, InterfaceController.class)));
         ImageButton close = findViewById(R.id.go_back);
-        close.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        close.setOnClickListener(v -> finish());
     }
 
 

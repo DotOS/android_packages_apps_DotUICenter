@@ -11,7 +11,13 @@ public class SystemProperties {
         }
     }
 
-    /** Get the value for the given key. */
+    private SystemProperties() {
+
+    }
+
+    /**
+     * Get the value for the given key.
+     */
     public static String get(String key) {
         try {
             return (String) CLASS.getMethod("get", String.class).invoke(null, key);
@@ -37,10 +43,8 @@ public class SystemProperties {
     /**
      * Get the value for the given key, and return as an integer.
      *
-     * @param key
-     *            the key to lookup
-     * @param def
-     *            a default value to return
+     * @param key the key to lookup
+     * @param def a default value to return
      * @return the key parsed as an integer, or def if the key isn't found or cannot be parsed
      */
     public static int getInt(String key, int def) {
@@ -55,10 +59,8 @@ public class SystemProperties {
     /**
      * Get the value for the given key, and return as a long.
      *
-     * @param key
-     *            the key to lookup
-     * @param def
-     *            a default value to return
+     * @param key the key to lookup
+     * @param def a default value to return
      * @return the key parsed as a long, or def if the key isn't found or cannot be parsed
      */
     public static long getLong(String key, long def) {
@@ -76,12 +78,10 @@ public class SystemProperties {
      * sensitive). If the key does not exist, or has any other value, then the default result is
      * returned.
      *
-     * @param key
-     *            the key to lookup
-     * @param def
-     *            a default value to return
+     * @param key the key to lookup
+     * @param def a default value to return
      * @return the key parsed as a boolean, or def if the key isn't found or is not able to be
-     *         parsed as a boolean.
+     * parsed as a boolean.
      */
     public static boolean getBoolean(String key, boolean def) {
         try {
@@ -90,9 +90,5 @@ public class SystemProperties {
         } catch (Exception e) {
             return def;
         }
-    }
-
-    private SystemProperties() {
-
     }
 }

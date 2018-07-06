@@ -14,6 +14,9 @@ import android.widget.ImageButton;
 import com.dot.uicenter.R;
 import com.dot.uicenter.fragments.accent_engine.CE_Accent_Green;
 import com.dot.uicenter.fragments.accent_engine.CE_Accent_Grey;
+import com.dot.uicenter.fragments.accent_engine.CE_Accent_Lemon;
+import com.dot.uicenter.fragments.accent_engine.CE_Accent_Orange;
+import com.dot.uicenter.fragments.accent_engine.CE_Accent_Oxygen;
 import com.dot.uicenter.fragments.accent_engine.CE_Accent_Pink;
 import com.dot.uicenter.fragments.accent_engine.CE_Accent_Pixel;
 import com.dot.uicenter.fragments.accent_engine.CE_Accent_Purple;
@@ -35,9 +38,8 @@ public class AccentEngine_Fragment extends Fragment {
         final ViewPager mViewPager = view.findViewById(R.id.accent_viewpager);
         PagerAdapter mSectionsPagerAdapter = new FragmentPagerAdapter(getChildFragmentManager()) {
             @Override
-            public int getCount()
-            {
-                return 10;
+            public int getCount() {
+                return 13;
             }
 
             @Override
@@ -63,14 +65,24 @@ public class AccentEngine_Fragment extends Fragment {
                         return new CE_Accent_Violet();
                     case 9:
                         return new CE_Accent_Pink();
+                    case 10:
+                        return new CE_Accent_Oxygen();
+                    case 11:
+                        return new CE_Accent_Lemon();
+                    case 12:
+                        return new CE_Accent_Orange();
                     default:
                         return null;
                 }
             }
         };
         mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            public void onPageScrollStateChanged(int arg0) { }
-            public void onPageScrolled(int arg0, float arg1, int arg2) { }
+            public void onPageScrollStateChanged(int arg0) {
+            }
+
+            public void onPageScrolled(int arg0, float arg1, int arg2) {
+            }
+
             public void onPageSelected(int currentPage) {
                 switch (currentPage) {
                     case 0:
@@ -103,6 +115,15 @@ public class AccentEngine_Fragment extends Fragment {
                     case 9:
                         updateAccentButton("Pink");
                         break;
+                    case 10:
+                        updateAccentButton("Oxygen");
+                        break;
+                    case 11:
+                        updateAccentButton("Lemon");
+                        break;
+                    case 12:
+                        updateAccentButton("Orange");
+                        break;
                 }
             }
         });
@@ -119,16 +140,13 @@ public class AccentEngine_Fragment extends Fragment {
         final CardView custom_apply = view.findViewById(R.id.card_ca);
         final ExpandableLayout custom_layout = view.findViewById(R.id.overlay_custom_layout);
         final ImageButton apply_accent = getActivity().findViewById(R.id.apply_ac);
-        custom_apply.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (custom_layout.isCollapsed()) {
-                    custom_layout.expand(true);
-                    apply_accent.setContentDescription("Custom");
-                } else if (custom_layout.isExpanded()) {
-                    custom_layout.collapse(true);
-                    apply_accent.setContentDescription("Pixel");
-                }
+        custom_apply.setOnClickListener(v -> {
+            if (custom_layout.isCollapsed()) {
+                custom_layout.expand(true);
+                apply_accent.setContentDescription("Custom");
+            } else if (custom_layout.isExpanded()) {
+                custom_layout.collapse(true);
+                apply_accent.setContentDescription("Oxygen");
             }
         });
     }

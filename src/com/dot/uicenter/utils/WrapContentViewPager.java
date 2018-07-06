@@ -10,6 +10,7 @@ public class WrapContentViewPager extends ViewPager {
     public WrapContentViewPager(Context context) {
         super(context);
     }
+
     public WrapContentViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);
     }

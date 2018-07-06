@@ -24,7 +24,8 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:padding="6dp"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/ic_left" />
+                android:tint="?android:attr/textColorPrimary"
+                app:srcCompat="@drawable/ic_arrow_left" />
 
             <include
                 layout="@layout/activity_main"
