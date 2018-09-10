@@ -37,4 +37,15 @@
   <string name="rs_dark">Buka tampilan warna kemudian usap ke kanan satu kali</string>
   <string name="rs_ac">Buka aksen warna dan bermain dengan itu</string>
   <string name="rs_black">Buka tampilan warna kemudian usap ke kanan dua kali</string>
+  <string name="date">Jumat, Juli 6</string>
+  <string name="clock">12:00</string>
+  <string name="batt_per">100%</string>
+  <string name="customize_qs_panel">Kustominasi panel cepat</string>
+  <string name="set_qspanel_background_alpha">Atur latar belakang panel cepat alpha</string>
+  <string name="set_qs_tiles_background_alpha">Atur latar belakang pengaturan cepat</string>
+  <string name="available_only_for_circle_qs_tiles_background_shape">Hanya berlaku di pengaturan cepat berbentuk lingkaran</string>
+  <string name="enable_circle_background_for_qs_tiles">Hidupkan bentuk lingkaran untuk pengaturan cepat</string>
+  <string name="active_tiles_will_track_accent_color_and_inactive_darker_lighter_color_theme_dependent">Pengaturan yang hidup akan berwarna sesuai aksen dan yang mati akan menjadi warna gelap/cerah (tergantung tema)</string>
+  <string name="set_qs_header_background_color">Atur latar belakang warna diatas pengaturan cepat</string>
+  <string name="go_back">Kembali</string>
 </resources>

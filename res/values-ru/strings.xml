@@ -37,4 +37,15 @@
   <string name="rs_dark">Откройте цвет наложения и смахните вправо один раз</string>
   <string name="rs_ac">Откройте цвет оттенка и играйте с ним</string>
   <string name="rs_black">Откройте цвет наложения и смахните вправо два раза</string>
+  <string name="date">Пятница, июл 6</string>
+  <string name="clock">12:00</string>
+  <string name="batt_per">100%</string>
+  <string name="customize_qs_panel">Настройка панели быстрых настроек</string>
+  <string name="set_qspanel_background_alpha">Установить задний фон панели быстрых настроек</string>
+  <string name="set_qs_tiles_background_alpha">Установить задний фон панели быстрых настроек</string>
+  <string name="available_only_for_circle_qs_tiles_background_shape">Доступно только для круглых плиток </string>
+  <string name="enable_circle_background_for_qs_tiles">Включить фоновый круг для плитки быстрых настроек</string>
+  <string name="active_tiles_will_track_accent_color_and_inactive_darker_lighter_color_theme_dependent">Активные плитки будет отслеживать контрастного цвета и неактивные темнее/светлее цвет (тема зависимых)</string>
+  <string name="set_qs_header_background_color">Установить цвет заголовка панели быстрых настроек</string>
+  <string name="go_back">Назад</string>
 </resources>

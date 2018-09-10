@@ -37,4 +37,15 @@
   <string name="rs_dark">פתח צבע ממשק ואז החלק ימינה פעם אחת</string>
   <string name="rs_ac">פתח צבע הדגשה בכדי לשחק איתו</string>
   <string name="rs_black">פתח צבע ממשק ואז החלק ימינה פעמיים</string>
+  <string name="date">Friday, Jul 6</string>
+  <string name="clock">12:00</string>
+  <string name="batt_per">100%</string>
+  <string name="customize_qs_panel">Customize QS Panel</string>
+  <string name="set_qspanel_background_alpha">Set QSPanel Background Alpha</string>
+  <string name="set_qs_tiles_background_alpha">Set QS Tiles Background Alpha</string>
+  <string name="available_only_for_circle_qs_tiles_background_shape">Available only for Circle QS Tiles Background Shape</string>
+  <string name="enable_circle_background_for_qs_tiles">Enable Circle Background for QS Tiles</string>
+  <string name="active_tiles_will_track_accent_color_and_inactive_darker_lighter_color_theme_dependent">Active Tiles will track accent color and inactive darker/lighter color (theme dependent)</string>
+  <string name="set_qs_header_background_color">Set QS Header Background Color</string>
+  <string name="go_back">Go back</string>
 </resources>

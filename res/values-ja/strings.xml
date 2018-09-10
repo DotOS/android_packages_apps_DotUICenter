@@ -37,4 +37,15 @@
   <string name="rs_dark">オーバーレイカラーを開き1回右にスワイプする</string>
   <string name="rs_ac">アクセントカラーを開き試してみる</string>
   <string name="rs_black">オーバーレイカラーを開き2回右にスワイプする</string>
+  <string name="date">7月6日（金）</string>
+  <string name="clock">12:00</string>
+  <string name="batt_per">100%</string>
+  <string name="customize_qs_panel">クイック設定パネルを編集する</string>
+  <string name="set_qspanel_background_alpha">クイック設定パネルの背景の透明度を設定する</string>
+  <string name="set_qs_tiles_background_alpha">クイック設定タイルの背景の透明度を設定する</string>
+  <string name="available_only_for_circle_qs_tiles_background_shape">クイック設定タイルの形が円形時のみ有効です</string>
+  <string name="enable_circle_background_for_qs_tiles">クイック設定タイルの背景を円形にする</string>
+  <string name="active_tiles_will_track_accent_color_and_inactive_darker_lighter_color_theme_dependent">有効なタイルはアクセントカラーと非アクティブなダーク/ライトの色を追跡します（テーマに依存）</string>
+  <string name="set_qs_header_background_color">クイック設定ヘッダーの背景色を設定する</string>
+  <string name="go_back">戻る</string>
 </resources>

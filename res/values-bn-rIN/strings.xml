@@ -3,10 +3,10 @@
 <resources>
   <string name="app_name">DotUI Center</string>
   <string name="ui_center_summary_title">Interface Tweaks</string>
-  <string name="title_welcome">Welcome to the DotUI Center</string>
+  <string name="title_welcome">DotUI সেন্টারে আপনাকে স্বাগতম</string>
   <string name="subtitle_welcome">Expand Below View to use available options</string>
   <string name="change_accent_title">Change Accent Theme</string>
-  <string name="change_accent_example_summary">Pixel</string>
+  <string name="change_accent_example_summary">পিক্সেল</string>
   <string name="auto_mode_title">Extract Overlay from Wallpaper</string>
   <string name="auto_mode_summary">Select Overlay from wallpaper accent</string>
   <string name="qs_tint_tacker_title">Track QS Tiles color Accent</string>
@@ -37,4 +37,15 @@
   <string name="rs_dark">Open Overlay Color then swipe to right one time</string>
   <string name="rs_ac">Open Accent Color and play with it</string>
   <string name="rs_black">Open Overlay Color then swipe to right two times</string>
+  <string name="date">Friday, Jul 6</string>
+  <string name="clock">12:00</string>
+  <string name="batt_per">১০০%</string>
+  <string name="customize_qs_panel">Customize QS Panel</string>
+  <string name="set_qspanel_background_alpha">Set QSPanel Background Alpha</string>
+  <string name="set_qs_tiles_background_alpha">Set QS Tiles Background Alpha</string>
+  <string name="available_only_for_circle_qs_tiles_background_shape">Available only for Circle QS Tiles Background Shape</string>
+  <string name="enable_circle_background_for_qs_tiles">Enable Circle Background for QS Tiles</string>
+  <string name="active_tiles_will_track_accent_color_and_inactive_darker_lighter_color_theme_dependent">Active Tiles will track accent color and inactive darker/lighter color (theme dependent)</string>
+  <string name="set_qs_header_background_color">Set QS Header Background Color</string>
+  <string name="go_back">ফেরত</string>
 </resources>

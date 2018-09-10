@@ -37,4 +37,15 @@
   <string name="rs_dark">Apri il Colore in Sovrimpressione quindi scorri il dito verso destra una volta</string>
   <string name="rs_ac">Apri il Colore Secondario e giocaci</string>
   <string name="rs_black">Apri il Colore in Sovrimpressione quindi scorri il dito verso destra due volte</string>
+  <string name="date">Venerdi, 6 Luglio</string>
+  <string name="clock">12:00</string>
+  <string name="batt_per">100%</string>
+  <string name="customize_qs_panel">Personalizza Pannello QS </string>
+  <string name="set_qspanel_background_alpha">Imposta sfondo Pannello QS (Alpha)</string>
+  <string name="set_qs_tiles_background_alpha">Imposta sfondo dei Tiles QS (Alpha)</string>
+  <string name="available_only_for_circle_qs_tiles_background_shape">Disponibile solo per la forma Circolare degli sfondi dei Tiles QS</string>
+  <string name="enable_circle_background_for_qs_tiles">Abilità Sfondo Circolare per i Tiles QS</string>
+  <string name="active_tiles_will_track_accent_color_and_inactive_darker_lighter_color_theme_dependent">I Tiles attivati tracceranno i colori accentati e i colori scuri/chiari inattivi (dipendenti dal tema)</string>
+  <string name="set_qs_header_background_color">Imposta colore di sfondo dell\'header dei QS</string>
+  <string name="go_back">Torna indietro</string>
 </resources>

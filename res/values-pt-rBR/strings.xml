@@ -37,4 +37,15 @@
   <string name="rs_dark">Abra a \"Cor do Tema\", em seguida, deslize para direita uma vez</string>
   <string name="rs_ac">Abra em \"cor de destaque\" e toque nele</string>
   <string name="rs_black">Abra a \"Cor do Tema\", em seguida, deslize para direita duas vezes</string>
+  <string name="date">Sexta-feira, 6 de julho</string>
+  <string name="clock">12:00</string>
+  <string name="batt_per">100%</string>
+  <string name="customize_qs_panel">Personalizar configurações rápidas</string>
+  <string name="set_qspanel_background_alpha">Colocar fundo das configurações rápidas</string>
+  <string name="set_qs_tiles_background_alpha">Colocar fundo dos tiles das configurações rápidas</string>
+  <string name="available_only_for_circle_qs_tiles_background_shape">Disponível apenas para tiles circulares das configurações rápidas</string>
+  <string name="enable_circle_background_for_qs_tiles">Ativar fundo circular para configurações rápidas</string>
+  <string name="active_tiles_will_track_accent_color_and_inactive_darker_lighter_color_theme_dependent">Tiles ativados irão detectar a cor destaque e desativar modo escuro/claro (tema dependente)</string>
+  <string name="set_qs_header_background_color">Cor do plano de fundo do cabeçalho das configurações rápidas</string>
+  <string name="go_back">Voltar</string>
 </resources>

@@ -37,4 +37,15 @@
   <string name="rs_dark">Otevřete Barvu překrytí a potáhněte prstem jednou doprava</string>
   <string name="rs_ac">Otevřete Barvu zvýraznění a hrajte si s tím</string>
   <string name="rs_black">Otevřete Barvu překrytí a potáhněte prstem dvakrát doprava</string>
+  <string name="date">Pátek, 6. července</string>
+  <string name="clock">12:00</string>
+  <string name="batt_per">100%</string>
+  <string name="customize_qs_panel">Přizpůsobit panel QS</string>
+  <string name="set_qspanel_background_alpha">Nastavit průhlednost pozadí panelu QS</string>
+  <string name="set_qs_tiles_background_alpha">Nastavit průhlednost pozadí dlaždic QS</string>
+  <string name="available_only_for_circle_qs_tiles_background_shape">Dostupné pouze pro pozadí kruhových dlaždic QS</string>
+  <string name="enable_circle_background_for_qs_tiles">Povolit kruhový tvar dlaždic QS</string>
+  <string name="active_tiles_will_track_accent_color_and_inactive_darker_lighter_color_theme_dependent">Aktivní dlaždice budou v barvě odstínu a neaktivní tmavé/světlé (podle motivu)</string>
+  <string name="set_qs_header_background_color">Nastavit barvu pozadí záhlaví QS</string>
+  <string name="go_back">Zpět</string>
 </resources>

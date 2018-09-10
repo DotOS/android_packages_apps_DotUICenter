@@ -37,4 +37,15 @@
   <string name="rs_dark">Otwórz Kolor Nakładki potem przesuń w prawo jeden raz</string>
   <string name="rs_ac">Otwórz Accent Color i baw się z nim</string>
   <string name="rs_black">Otwórz Kolor Nakładki potem przesuń w prawo dwa razy</string>
+  <string name="date">Piątek, 6 Lip</string>
+  <string name="clock">12:00</string>
+  <string name="batt_per">100%</string>
+  <string name="customize_qs_panel">Dostosuj panel Szybkich ustawień</string>
+  <string name="set_qspanel_background_alpha">Ustaw tło alfa panelu Szybkich ustawień</string>
+  <string name="set_qs_tiles_background_alpha">Ustaw tło alfa kafelek Szybkich ustawień</string>
+  <string name="available_only_for_circle_qs_tiles_background_shape">Dostępne tylko dla teł zaokrąglonych przełączników szybkich ustawień</string>
+  <string name="enable_circle_background_for_qs_tiles">Włącz zaokrąglone tło dla przełączników szybkich ustawień</string>
+  <string name="active_tiles_will_track_accent_color_and_inactive_darker_lighter_color_theme_dependent">Aktywne kafelki będą w kolorze wiodącym, a nieaktywne ciemniejsze/jaśniejsze (zależne od motywu)</string>
+  <string name="set_qs_header_background_color">Ustaw kolor tła nagłówka szybkich ustawień</string>
+  <string name="go_back">Wróć</string>
 </resources>

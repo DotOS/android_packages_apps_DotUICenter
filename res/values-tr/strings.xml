@@ -37,4 +37,15 @@
   <string name="rs_dark">Tema rengini açın ve sağa doğru kaydırın</string>
   <string name="rs_ac">Vurgu rengini açın sağa doğru kaydırın</string>
   <string name="rs_black">Tema rengini açın ve sağa doğru kaydırın</string>
+  <string name="date">6 Temmuz Cuma</string>
+  <string name="clock">12:00</string>
+  <string name="batt_per">100%</string>
+  <string name="customize_qs_panel">Hızlı ayarlar panelini özelleştir</string>
+  <string name="set_qspanel_background_alpha">Hızlı ayarlar arkaplan bulanıklığını ayarla</string>
+  <string name="set_qs_tiles_background_alpha">Hızlı ayarlar kare arkaplan bulanıklığını ayarla</string>
+  <string name="available_only_for_circle_qs_tiles_background_shape">Sadece daire kare arkaplan şekilleri için kullanılabilir</string>
+  <string name="enable_circle_background_for_qs_tiles">Hız ayarlar kareleri için daire arkaplanını etkinleştir</string>
+  <string name="active_tiles_will_track_accent_color_and_inactive_darker_lighter_color_theme_dependent">Aktif kareler vurgu rengini ve inaktif koyu/açık rengi (temaya bağlı) izleyecektir</string>
+  <string name="set_qs_header_background_color">Hızlı ayarlar üst bilgisi arkaplan rengi ayarla</string>
+  <string name="go_back">Geri dön</string>
 </resources>

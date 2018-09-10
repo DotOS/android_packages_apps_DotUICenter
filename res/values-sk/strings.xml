@@ -37,4 +37,15 @@
   <string name="rs_dark">Otvorte farbu prekrytia a jedenkrát potiahnite prstom doprava</string>
   <string name="rs_ac">Otvorte farbu odtieňa a hrajte sa s tým</string>
   <string name="rs_black">Otvorte farbu prekrytia a dvakrát potiahnite prstom doprava</string>
+  <string name="date">Piatok, 6 júl</string>
+  <string name="clock">12:00</string>
+  <string name="batt_per">100%</string>
+  <string name="customize_qs_panel">Prispôsobiť Panel rýchl. nastavení</string>
+  <string name="set_qspanel_background_alpha">Nastaviť priehľadnosť pozadia panela Rýchl. nastavení</string>
+  <string name="set_qs_tiles_background_alpha">Nastaviť priehľadnosť pozadia dlaždíc Rýchl. nastavení</string>
+  <string name="available_only_for_circle_qs_tiles_background_shape">Dostupné iba pre pozadie kruhových dlaždíc Rýchl. nastavení</string>
+  <string name="enable_circle_background_for_qs_tiles">Zapnúť kruhový tvar dlaždíc Rýchl. nastavení</string>
+  <string name="active_tiles_will_track_accent_color_and_inactive_darker_lighter_color_theme_dependent">Aktívne dlaždice budú vo farbe odtieňa a neaktívne tmavé / svetlé (podľa témy)</string>
+  <string name="set_qs_header_background_color">Nastaviť farbu pozadia záhlavia Rýchl. nastavení</string>
+  <string name="go_back">Späť</string>
 </resources>
